@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- ===== CONFIGURACAO GERAL ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Sophia</title>
+
+    <!-- ===== FONTES ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- ===== ESTILIZACAO CSS ===== -->
+    <link rel="stylesheet" href="./assets/style/reset.css">
+    <link rel="stylesheet" href="./assets/style/principal.css">
+    <link rel="stylesheet" href="./assets/style/expressoes.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+   
+    <!-- ===== CORACAO DO JOGO ===== -->
+    <script defer src="./assets/script/app.js"></script>
+    
+    <script defer src="./assets/script/ranking.js"></script>
+
+    <script defer src="./assets/script/expressoes.js"></script>
+
+
+    <script defer src="./assets/script/audio.js""></script>
+
+    <Script defer src="./assets/script/acertou.js"></Script>
+</head>
+<body>
+    <section class="titulo">
+        <h1>
+            <strong> Detona Sophia</strong>
+        </h1>
+    </section>
+    <!-- ===== TOPO - MENU ===== -->
+    <section class="menu">
+
+        <div class="menu-tempo">
+            <h2>Tempo Disponível</h2>
+            <h2 id="tempo">60</h2>
+        </div>
+        
+        <div class="pontuacao">
+            <h2>Quantidade de Acertos</h2>
+            <h2 id="pontuacao">0</h2>
+        </div>
+
+        <div class="menu-vida">
+            <img class="vidas" src="./assets/img/life.png">
+            <h2 id="vida">3</h2>
+        </div>
+    </section>
+    
+    <!-- ===== PAINEL PRINCIPAL ===== -->
+    <section class="main">
+
+        <section class="menu-jogador">
+            <section id="cadastro">
+                <h2>🎮 Digite seu nick</h2>
+                <input type="text" id="nomeJogador" placeholder="Seu nome">
+                <button id="btnIniciar">Começar Jogo</button>
+            </section>
+
+            <div class="ranking">
+                <h2>🏆 Melhores colocados</h2>
+                
+                <ul id="ranking-jogador">
+                    <!-- <li id="nome1">1</li>
+                    <li id="nome2">2</li>
+                    <li id="nome3">3</li>
+                    <li id="nome4">4</li>
+                    <li id="nome5">5</li>
+                    <li id="nome6">6</li>
+                    <li id="nome7">7</li>
+                    <li id="nome8">8</li>
+                    <li id="nome9">9</li>
+                    <li id="nome10">10</li> -->
+                </ul>
+
+            </div>
+            <button id="btnLimparRanking">Limpar Ranking</button>
+        </section>
+        
+
+        <section class="painel">
+            <div class="quadrante">
+                <div class="sub-quadrante inimigo"  id="1"></div>
+                <div class="sub-quadrante" id="2"></div>
+                <div class="sub-quadrante" id="3"></div>
+            </div>
+            <div class="quadrante">
+                <div class="sub-quadrante" id="4"></div>
+                <div class="sub-quadrante" id="5"></div>
+                <div class="sub-quadrante" id="6"></div>
+            </div>
+            <div class="quadrante">
+                <div class="sub-quadrante" id="7"></div>
+                <div class="sub-quadrante" id="8"></div>
+                <div class="sub-quadrante" id="9"></div>
+            </div>
+          
+        </section>
+    <p class="frases"></p>  
+    </section>
+    
+</body>
+</html>

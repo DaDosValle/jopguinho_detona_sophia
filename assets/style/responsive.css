@@ -1,0 +1,199 @@
+
+
+/* === Dispositivos até 768px (celulares padrão) === */
+@media (max-width: 1050px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .titulo h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .menu div{
+    flex-wrap: wrap;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 0;
+    align-items: center;
+  }
+
+
+  .menu-jogador {
+    padding: 10px;
+    width: 85%;
+    /* align-items: center; */
+  }
+
+
+   #cadastro {
+    margin-bottom: 20px;
+  }
+
+  #cadastro h2 {
+    font-size: 1.3rem;
+  }
+
+  .painel {
+    gap: 8px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    width: 95%;
+    height: 70%;
+  }
+
+  .sub-quadrante {
+    height:190px;
+    width: 30%;
+    border-radius: 12%;
+  }
+
+  .quadrante {
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .ranking h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+    #btnIniciar {
+    height: 55px;
+    width: 50%;
+    font-size: 1rem;
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+
+  #btnLimparRanking{
+    height: 45px;
+    width: 100%;
+    font-size: 0.7rem;
+    padding: 6px;
+  }
+
+  input{
+    height: 55px;
+    font-size: 1rem;
+    padding-left: 5px;;
+  }
+
+    li {
+    font-size: 1.1rem;
+    padding-top: 25px;
+  }
+
+ 
+
+  .frases {
+    font-size: 1rem;
+    text-align: center;
+    bottom: 60px;
+  }
+}
+
+/* === Dispositivos até 480px (celulares pequenos) === */
+@media (max-width: 510px) {
+  .titulo {
+    padding: 15px 10px 1px;
+   
+  }
+
+  .titulo h1{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 0;
+  }
+
+  .menu div{
+    flex-wrap: wrap;
+    padding: 10px 15px 10px 15px;
+  }
+
+  .menu h2 {
+    font-size: 0.7rem;
+  }
+
+  .vidas {
+    width: 25px;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .menu-jogador {
+    width: 90%;
+    padding: 8px;
+  }
+
+  .cadastro{
+    margin-bottom: 20px;
+  }
+
+  input{
+    height: 50px;
+    font-size: 0.8rem;
+  }
+
+  
+  .painel {
+    width: 95%;
+    margin-bottom: 5%;
+    margin-left: 0;
+
+  }
+
+  .sub-quadrante {
+    width: 29%;
+    height: 150px;
+  }
+
+
+  #btnIniciar {
+    height: 45px;
+    width: 50%;
+    font-size: 0.7rem;
+    padding: 6px;
+  }
+
+  #btnLimparRanking{
+    height: 35px;
+    width: 100%;
+    font-size: 0.7rem;
+    /* padding: 6px; */
+  }
+
+  li {
+    font-size: 0.6rem;
+  }
+
+  .frases {
+    font-size: 0.9rem;
+    bottom: 50px;
+  }
+}
